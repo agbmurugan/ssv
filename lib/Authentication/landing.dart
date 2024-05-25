@@ -5,6 +5,7 @@ import 'package:sreeselvavinayagartemple/Launchpages/launchnewpage.dart';
 
 import 'package:sreeselvavinayagartemple/aa_controller/session_Controller.dart';
 import 'package:sreeselvavinayagartemple/homeScreen/homepage.dart';
+import 'package:sreeselvavinayagartemple/src/mvc/view/pooja_time/pooja_time_screen.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -29,7 +30,7 @@ class _LandingPageState extends State<LandingPage> {
 
     if (isFirstTime) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LaunchNewPage()),
+        MaterialPageRoute(builder: (context) => PoojaTimeScreen()),
       );
 
       prefs.setBool("firstTimeLaunch", false);
@@ -56,9 +57,9 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     if (checkUser == false) {
-      return  Homepage();
+      return  PoojaTimeScreen();
     } else if (checkUser == true) {
-      return Homepage();
+      return PoojaTimeScreen();
     }
     return Container(
       color: Colors.white,

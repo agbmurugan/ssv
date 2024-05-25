@@ -67,6 +67,7 @@ dependencies:
   cloud_firestore: ^4.17.4
   dio: ^5.4.3+1
   logger: ^2.3.0
+  fluttertoast: ^8.2.5
 
 dev_dependencies:
   flutter_test:
@@ -88,6 +89,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/language/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

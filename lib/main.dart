@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sreeselvavinayagartemple/di.dart';
 import 'package:sreeselvavinayagartemple/sessionHandler.dart';
 //import 'firebase_options.dart';
 
@@ -17,7 +18,8 @@ import 'package:sreeselvavinayagartemple/sessionHandler.dart';
 // final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 //     FlutterLocalNotificationsPlugin();
 void main() async {
-//     WidgetsFlutterBinding.ensureInitialized();
+     WidgetsFlutterBinding.ensureInitialized();
+     await init();
 //   await Firebase.initializeApp(
 //   options: DefaultFirebaseOptions.currentPlatform,
 
